@@ -389,7 +389,7 @@ header .header .side-header .cart .cart-count{
 
 header .header {
   background-color: var(--white);
-  box-shadow: 5px 5px 10px 0px #DBDBDB;
+  box-shadow: -1px 0px 5px rgb(57 63 72 / 30%) !important;
 }
 
 

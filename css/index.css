@@ -93,7 +93,7 @@
     -o-border-radius: 50% !important;
     width: 8px;
     height: 8px;
-    background-color: #DEDEDE;
+    background-color:  #a29c9c;
 }
 .carousel-indicators [data-bs-target].active{
     background-color: var(--main-purple);
@@ -205,4 +205,73 @@
         margin-right: 3rem;
     }
 }
+
+
 /* landing-sec end */
+
+/* our-exp start */
+
+.our-exp .top-title {
+    background-color: var(--main-purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+}
+
+.our-exp .exp-slider{
+    background: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our-exp .exp-slider .exp-card{
+    background-color: white;
+    box-shadow: 5px 5px 10px 0px #DBDBDB;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    overflow-x: hidden;
+}
+
+.our-exp .exp-slider .exp-card h6{
+    color: #1F1E1F;
+    transition: all 0.5s;
+}
+
+.our-exp .exp-slider .exp-card:hover{
+    transform: scale(1.1);
+}
+
+.our-exp .exp-slider .exp-card:hover h6{
+   color: var(--main-purple);
+}
+
+.our-exp .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: -5px ;
+}
+
+.our-exp .mySwiper2 {
+    padding-bottom: 6rem;
+}
+
+.our-exp .mySwiper2 .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #a29c9c ;
+}
+.our-exp .mySwiper2 .swiper-pagination-bullet-active{
+    background-color: var(--main-purple);
+}
+
+/* our-exp end */
