@@ -22,15 +22,12 @@ a {
   --black: #000;
   --main-orange: #EE801E;
   --main-purple :#56227A;
-  --light-black: rgba(0, 0, 0, 0.09);
+  --light-black: #434343;
   --footer-link-black: rgba(0, 0, 0, 0.77);
   --footer-p: #1F1E1F;
-  --blog-blue: rgba(30, 52, 255, 0.64);
   --white: #fff;
-  --title-gray: #888888;
-  --clint-name-color: rgba(10, 13, 36, 0.85);
   --star-color: #ffc700;
-  --bg-color: rgba(91, 108, 255, 0.86);
+
 
 }
 
@@ -59,20 +56,114 @@ a {
 
 /* header start */
 
-header  {
-  background-color: #4d5ef8;
-  overflow-x: hidden;
+
+
+
+header .top-header {
+  background-color: var(--main-orange);
+
+}
+.sidebar li .submenu {
+  list-style: none;
+  text-align: center;
+ 
+}
+
+.dropdown4
+,.dropdown5 {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.header .modal-backdrop{
+  z-index: 800 !important;
+}
+
+.dropdown-menu {
+  display: block;
+  position: absolute;
+  background-color: white;
+  min-width: 270px;
+  border: none;
+  right: -50px;
+  padding: 0;
+  max-height: 0 ;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  
+}
+
+.dropdown5 .dropdown-menu {
+  display: block;
+  position: absolute;
+  background-color: white;
+  min-width: 100px;
+  border: none;
+  right: 0px;
+  padding: 0;
+  max-height: 0 ;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  
+}
+
+
+.dropdown4:hover .dropdown-menu {
+  max-height: 600px; 
+  transition-delay: 0.3s; 
+  padding: 1.5rem 0;
+  box-shadow: -10px -5px 20px 8px #f0f0f0;
+}
+.dropdown5:hover .dropdown-menu {
+  max-height: 600px; 
+  transition-delay: 0.3s; 
+  padding: 1.5rem 0;
+  box-shadow: -10px -5px 20px 8px #f0f0f0;
+}
+.dropdown-menu .items {
+  font-size: 14px;
+  line-height: 2.5;
+  color: var(--light-black) ;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.dropdown-content .items:hover {
+  background-color: #dac0ec48 !important;
+  color: var(--main-purple) !important;
+  padding-right: 1.5rem;
 }
 
 
 
+header .top-header .header-icons i{
+  color: var(--white);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
 
+header .top-header .header-icons i:hover{
+  opacity: 0.7;
+}
 
+header .top-header .header-info p  ,
+header .top-header .header-info span{
+  color: var(--white);
+  font-weight: bold;
+  
+}
 
 .header .navbar-nav .nav-link {
   font-weight: 400;
   line-height: 22px;
-  color: white;
+  color: var(--light-black);
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -86,11 +177,11 @@ header  {
   font-weight: 500;
   line-height: 22px;
   color: black;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
   position: relative;
   padding-right: 0px;
 }
@@ -98,7 +189,7 @@ header  {
  #myheader .nav-link::after {
   content: "";
   position: absolute;
-  background-color: rgba(75, 111, 255, 1);
+  background-color: var(--main-purple);
   border-radius: 10px;
   height: 3px;
   width: 50%;
@@ -128,7 +219,7 @@ header  {
   bottom: 0;
   -webkit-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
   transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-  background-color: rgba(75, 111, 255, 1);
+  background-color: var(--main-purple);
 }
  #myheader .nav-link:hover::before {
   width: 100%;
@@ -139,6 +230,12 @@ header  {
 
 #myheader {
   display: none;
+  position: relative;
+  transition: position 5s 3s ease !important;
+  -webkit-transition: position 5s 3s ease !important;
+  -moz-transition: position 5s 3s ease !important;
+  -ms-transition: position 5s 3s ease !important;
+  -o-transition: position 5s 3s ease !important;
 }
 
 .sticky {
@@ -149,7 +246,7 @@ header  {
   background-color: white !important;
   height: 90px;
   box-shadow: -1px 0px 5px rgb(57 63 72 / 30%) !important;
-  transition: display 5s 3s ease !important;
+ 
 }
 
 .sticky > .nav {
@@ -163,7 +260,7 @@ header  {
  .header .navbar-nav .nav-link::after {
   content: "";
   position: absolute;
-  background-color: white;
+  background-color: var(--main-purple);
   border-radius: 10px;
   height: 3px;
   width: 50%;
@@ -193,7 +290,7 @@ header  {
   bottom: 0;
   -webkit-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
   transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-  background-color: white;
+  background-color: var(--main-purple);
 }
  .header .navbar-nav .nav-link:hover::before {
   width: 100%;
@@ -211,7 +308,7 @@ header  {
  .header .offcanvas-start .navbar-nav .nav-link {
   font-weight: 400 !important;
   line-height: 22px;
-  color: white;
+  color: var(--light-black);
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -223,17 +320,22 @@ header  {
   padding-bottom: 0px;
 }
  .header .offcanvas-start .navbar-nav .nav-link:hover {
-  color: #a6c1e8;
+  color: var(--main-purple);
+}
+.header .offcanvas-start .navbar-nav .nav-link:hover:before{
+  display: none;
+
 }
 
  .header .offcanvas-start .navbar-nav .active {
-  color: #a6c1e8;
+  color: var(--main-purple);
 }
- .header .offcanvas-start .navbar-nav .active::after {
+ .header .offcanvas-start .navbar-nav .active::after  
+{
   display: none;
 }
  .navbar-light .nav-toggle {
-  color: white !important;
+  color: var(--light-black) !important;
   font-size: 30px !important;
   font-weight: bold;
   display: block;
@@ -245,7 +347,10 @@ header  {
 }
 
  .header .offcanvas {
-  background-color: #37429f;
+  background: url(../images/bg.png);
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 500px) {
@@ -259,7 +364,33 @@ header  {
     center/1em auto no-repeat;
 }
 
+header .header .side-header a {
+  color: var(--light-black);
+  font-size: 16px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+header .header .side-header a:hover{
+  color: var(--main-purple);
+}
+header .header .side-header .cart {
+  position: relative;
+}
+header .header .side-header .cart .cart-count{ 
+  position: absolute;
+  top: -5px;
+  left: 18px;
+  font-size: 15px;
 
+}
+
+header .header {
+  background-color: var(--white);
+  box-shadow: 5px 5px 10px 0px #DBDBDB;
+}
 
 
 
