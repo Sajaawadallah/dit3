@@ -500,3 +500,69 @@ footer .botom-footer .copy-right p{
 }
 
 /* footer end */
+
+
+/* contact start */
+
+.contact .top-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.contact .top-title h2{
+  color: var(--main-purple);
+  font-weight: bold;
+}
+.contact .top-title p{
+  color: var(--footer-p);
+}
+
+
+.contact input,
+.contact textarea {
+  border: 1px solid #b4aeae;
+  border-radius: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: var(--main-orange) !important;
+}
+
+.contact label {
+  font-weight: 500 !important;
+  font-size: 17px !important;
+  line-height: 24px;
+  letter-spacing: -0.011em;
+  color: var(--main-purple);
+}
+input[type="email"],
+input[type="tel"] {
+  direction: rtl;
+}
+.invalid-feedback {
+  text-align: start;
+}
+.form-check label {
+  color: #4E4E4E !important;
+  font-size: 14px !important;
+
+}
+.form-check-input:checked {
+  background-color: var(--main-orange) !important;
+  border-color: var(--main-orange) !important;
+}
+
+.form-check-input:active,
+.form-check-input:focus {
+  border-color: var(--main-orange)!important;
+}
+
+
+/* contact end */

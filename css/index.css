@@ -606,3 +606,63 @@
 
 
 /* clints end */
+
+
+
+
+/* our-vigen start */
+
+.our-vigen {
+    background: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.our-vigen .top-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.our-vigen .top-title h2{
+    color: var(--main-purple);
+    font-weight: bold;
+}
+.our-vigen .top-title p{
+    color: var(--footer-p);
+}
+
+.our-vigen .img-box{
+    background-color: white;
+    box-shadow: 5px 5px 10px 0px #DBDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 200px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.our-vigen .title-box{
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--main-purple);
+}
+
+.our-vigen .title-box a {
+    color: var(--white);
+    font-weight: bold;
+    line-height: 30px;
+}
+
+/* our-vigen end */
+
+
