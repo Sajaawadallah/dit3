@@ -106,6 +106,41 @@ new Swiper(".mySwiper2", {
     },
 });
 
+// slider for product  
+
+var swiper = new Swiper(".mySwiper3", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    speed: 2000,
+    navigation: {
+        nextEl: ".next",
+        prevEl: ".prev",
+    },
+    loop: true,
+
+    breakpoints: {
+
+
+        773: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+
+
+        },
+    }
+
+});
+
+
+
 
 
 

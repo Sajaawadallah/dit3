@@ -9,17 +9,6 @@
     
 }
 
-.landing-sec .side-icon {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    z-index: 10;
-
-}
-
 
 @media (min-width : 992px) {
     .landing-sec .carousel-inner{
@@ -59,6 +48,17 @@
     }
 }
 
+.landing-sec .side-icon {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+
+}
+
 
 .landing-sec .side-icon .icon {
     display: flex;
@@ -67,8 +67,8 @@
     text-align: center;
     background-color: var(--main-purple);
     color: white;
-    width: 40px;
-    height: 30px;
+    width: 45px;
+    height: 35px;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -113,6 +113,9 @@
    
 }
  .btn-danger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--main-orange);
     border-radius:5px ;
     -webkit-border-radius:5px ;
@@ -122,7 +125,7 @@
     border: 1px solid var(--main-orange);
     font-weight: bold;
     width: 177px;
-    height: 40px;
+    height: 45px;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -136,26 +139,29 @@
 }
 
  .btn-outline-dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
     border-radius:5px ;
     -webkit-border-radius:5px ;
     -moz-border-radius:5px ;
     -ms-border-radius:5px ;
     -o-border-radius:5px ;
-    border: 1px solid var(--footer-p);
+    border: 1px solid var(--main-purple);
     font-weight: bold;
     width: 177px;
-    height: 40px;
+    height: 45px;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
-    color: var(--footer-p);
+    color: var(--main-purple);
 
 }
  .btn-outline-dark:hover{
-    background-color: var(--footer-p);
+    background-color: var(--main-purple);
     color: white;
 }
 
@@ -228,7 +234,7 @@
 }
 .our-exp .exp-slider .exp-card{
     background-color: white;
-    box-shadow: 5px 5px 10px 0px #DBDBDB;
+    box-shadow: 2px 2px 10px 0px #DBDBDB;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -244,6 +250,15 @@
     overflow: hidden;
 }
 
+.our-exp .exp-slider .exp-card div {
+    min-width: 231px;
+    min-height: 173px;
+}
+.our-exp .exp-slider .exp-card div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .our-exp .exp-slider .exp-card h6{
     color: var(--footer-p);
     transition: all 0.5s;
@@ -298,15 +313,25 @@
 
 .shop-now .prod-card{
     background-color: white;
-    box-shadow: 5px 5px 10px 0px #DBDBDB;
+    box-shadow: 2px 2px 10px 0px #DBDBDB;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     height: 420px !important;
-    
-   
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.shop-now .prod-card:hover{
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
 }
 .shop-now .prod-card img{
     height: 200px;
@@ -346,6 +371,41 @@
     font-weight: bold;
 }
 
+.shop-now .control .next,
+.shop-now .control .prev {
+  position: absolute;
+  z-index: 20;
+  top: 43%;
+  color: var(--white) !important;
+  font-weight: 800 !important;
+  background: var(--main-purple);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-now .control .prev {
+  left: 20px !important;
+}
+
+.shop-now .control .next {
+  right: 20px !important;
+}
+
+@media (max-width: 576px) {
+  .shop-now .control .next,
+  .shop-now .control .prev {
+    display: none;
+  }
+}
 
 /* shop now end */
 

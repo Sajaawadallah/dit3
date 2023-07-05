@@ -1,11 +1,11 @@
 /* import fonts from google font */
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 /* universal and main style  start */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Tajawal", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 button,
@@ -17,6 +17,7 @@ textarea {
 a {
   text-decoration: none;
 }
+
 
 :root {
   --black: #000;
@@ -51,6 +52,12 @@ a {
   z-index: 0 !important;
 }
 
+
+@media (min-width: 1400px) {
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1200px !important;
+  }
+}
 /* universal and main style  end */
 
 
@@ -84,7 +91,7 @@ header .top-header {
   display: block;
   position: absolute;
   background-color: white;
-  min-width: 270px;
+  min-width: 200px;
   border: none;
   right: -50px;
   padding: 0;
@@ -105,6 +112,7 @@ header .top-header {
   max-height: 0 ;
   overflow: hidden;
   transition: all 0.3s ease;
+ 
   
 }
 
@@ -113,13 +121,13 @@ header .top-header {
   max-height: 600px; 
   transition-delay: 0.3s; 
   padding: 1.5rem 0;
-  box-shadow: -10px -5px 20px 8px #f0f0f0;
+  box-shadow: rgb(240 240 240 / 16%) 0px 1px 20px 0px;
 }
 .dropdown5:hover .dropdown-menu {
   max-height: 600px; 
   transition-delay: 0.3s; 
   padding: 1.5rem 0;
-  box-shadow: -10px -5px 20px 8px #f0f0f0;
+  box-shadow: rgb(240 240 240 / 16%) 0px 1px 20px 0px;;
 }
 .dropdown-menu .items {
   font-size: 14px;
