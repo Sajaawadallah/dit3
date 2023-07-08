@@ -139,6 +139,39 @@ var swiper = new Swiper(".mySwiper3", {
 
 });
 
+// slider for product  
+
+var swiper1 = new Swiper(".mySwiper4", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    speed: 2000,
+    navigation: {
+        nextEl: ".next1",
+        prevEl: ".prev1",
+    },
+    loop: true,
+
+    breakpoints: {
+
+
+        773: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+
+
+        },
+    }
+
+});
+
 
 
 
@@ -165,3 +198,23 @@ var swiper = new Swiper(".mySwiper3", {
         })
 })()
 
+
+const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage() {
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase').style.transform = `translateX(${(imgId - 1) * displayWidth}px)`;
+}
+
+window.addEventListener('resize', slideImage);

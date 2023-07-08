@@ -574,3 +574,66 @@ input[type="tel"] {
 
 
 /* contact end */
+
+.btn-danger{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-orange);
+  border-radius:5px ;
+  -webkit-border-radius:5px ;
+  -moz-border-radius:5px ;
+  -ms-border-radius:5px ;
+  -o-border-radius:5px ;
+  border: 1px solid var(--main-orange);
+  font-weight: bold;
+  width: 177px;
+  height: 45px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+
+}
+.btn-danger:hover{
+  background-color: var(--main-purple);
+  border-color: var(--main-purple);
+}
+
+.btn-danger:active {
+  background-color: var(--main-orange) !important;
+  border: 1px solid var(--main-orange) !important;
+}
+
+.btn-danger:focus {
+  background-color: var(--main-orange) !important;
+  border: 1px solid var(--main-orange) !important;
+}
+
+.btn-outline-dark{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius:5px ;
+  -webkit-border-radius:5px ;
+  -moz-border-radius:5px ;
+  -ms-border-radius:5px ;
+  -o-border-radius:5px ;
+  border: 1px solid var(--main-purple);
+  font-weight: bold;
+  width: 177px;
+  height: 45px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  color: var(--main-purple);
+
+}
+.btn-outline-dark:hover{
+  background-color: var(--main-purple);
+  color: white;
+}
